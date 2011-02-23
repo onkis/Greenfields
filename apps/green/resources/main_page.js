@@ -5,17 +5,18 @@ Green.mainPage = SC.Page.design({
   mainPane: SC.MainPane.design({
     childViews: [SC.LabelView.design({
       layout: {
-        "left": 110,
+        "left": 108,
         "width": 200,
-        "top": 20,
+        "top": 109,
         "height": 18
       },
-      value: "Welcome to SproutCore!"
+      value: "Welcome to something!"
     }), SC.LabelView.design({
+      valueBinding: 'Green.label',
       layout: {
-        "left": 47,
+        "left": 108,
         "width": 199,
-        "top": 111,
+        "top": 170,
         "height": 33
       }
     }), SC.TextFieldView.design({
@@ -24,6 +25,30 @@ Green.mainPage = SC.Page.design({
         "width": 78,
         "top": 64,
         "height": 29
+      }
+    }), SC.ButtonView.design({
+      layout: {
+        "left": 110,
+        "width": 212,
+        "top": 135,
+        "height": 24
+      },
+      isEnabled: NO,
+      title: "Someting"
+    }), SC.ButtonView.design({
+      layout: {
+        "left": 196,
+        "width": 137,
+        "top": 68,
+        "height": 24
+      },
+      title: "Some Button"
+    }), SC.FieldView.design({
+      layout: {
+        "top": 17,
+        "left": 106,
+        "width": 198,
+        "height": 36
       }
     })]
   }),
